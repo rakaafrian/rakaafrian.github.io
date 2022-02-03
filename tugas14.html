@@ -1,0 +1,62 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body bgcolor="chocolate">
+<div class="w3-container">
+<img src="informatika.jfif" width="100%" height="25%">
+</div>
+<div class="w3-bar w3-orange">
+ <button class="w3-bar-item w3-button" onclick="openBiodata('Home')">Home</button>
+ <button class="w3-bar-item w3-button" onclick="openBiodata('Profile')">Profile</button>
+ <button class="w3-bar-item w3-button" onclick="openBiodata('Unikomart')">Unikomart</button>
+ <button class="w3-bar-item w3-button" onclick="openBiodata('Kampus')">Kampus</button>
+ <button class="w3-bar-item w3-button" onclick="openBiodata('Foto')">Foto</button>
+</div>
+<div class="w3-container biodata w3-animate-zoom">
+    <br><br>
+    <h1><center>Selamat Datang</center></h1>
+</div>
+<div id="Home" class="w3-container  biodata w3-animate-fading" style="display:none">
+ <h1>Home</h1>
+ <h2><center>Belajar HTML dan CSS</center></h2>
+ <p><center>Mata Kuliah Pemograman WEB 1<br>
+ Universitas Komputer Indonesia</center></p>
+</div>
+<div id="Profile" class="w3-container biodata w3-animate-left" style="display:none">
+ <h1>Profile</h1>
+ <br><br>
+ <h2><center>Nama : Raka Afrian Nurhakim<br>Kelas : Informatika-6<br>
+ Tempat Tanggal Lahir : Garut, 18 April 2003</center></h2>
+</div>
+<div id="Kampus" class="w3-container biodata w3-animate-right" style="display:none">
+ <h1>Kampus</h1>
+ <img src="kampus.jfif" width="500px" height="200px">
+ <h2>Visi</h2>
+ <p>Menjadi Universitas terkemuka dibidang Teknologi Informasi & Komunikasi, berwawasan Global, berjiwa Entrepreneur dan menjadi Pusat Unggulan dibidang Ilmu Pengetahuan dan Teknologi yang mendukung Pembangunan Nasional serta berorientasi pada kepentingan Masyarakat, Bangsa dan Negara.</p>
+ <h2>Misi</h2>
+ <p>Menyelenggarakan Pendidikan Tinggi Modern berdasarkan Budaya Organisasi UNIKOM, PIQIE (Professionalism, Integrity, Quality, Information Technology, Excellence), dengan Sistem Pendidikan yang Kondusif dan Program–program Studi yang berbasis pada Software (Perangkat Lunak), Hardware (Perangkat Keras), dan Entrepreneurship (Kewirausahaan) dengan mengoptimalkan Sumber Daya yang ada berdasarkan prinsip Efisiensi, Efektifitas dan Produktifitas.</p>
+</div>
+<div id="Unikomart" class="w3-container biodata w3-animate-zoom" style="display:none">
+ <h1>Unikomart</h1>
+<img src="unikomart.jfif" width="500px" height="450px">
+<h2>
+</div>
+<div id="Foto" class="w3-container biodata w3-animate-left" style="display:none">
+<center>
+ <h1>Foto</h1>
+ <img src="rakaa1.jpeg" width="250px" height="350px">
+</center>
+ </div>
+<script>
+function openBiodata(Biodata) {
+ var i;
+ var x = document.getElementsByClassName("Biodata");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(Biodata).style.display = "block";
+}
+</script>
+</body>
+</html>
